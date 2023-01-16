@@ -3,7 +3,7 @@ import "./Expenses.css";
 
  // Components
 import ExpenseItem from "./ExpenseItem";
-import Card from "./Card";
+import Card from "../UI/Card";
 
 const Expenses = (props) => { {/* rec const expenses from app.js*/}
   return (
