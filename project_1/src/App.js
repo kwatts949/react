@@ -1,7 +1,6 @@
-import ExpenseItem from "./components/ExpenseItem";
 import Expenses from "./components/Expenses";
 
-function App() {
+const App = () => {
   const expenses = [
     {
       id: "e1",
@@ -28,7 +27,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>My App</h1>
-        <Expenses expenses={expenses}/>
+        <Expenses items={expenses} />{" "}
+        {/** pass expense const in to Expenses as property*/}
       </header>
     </div>
   );
