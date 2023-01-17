@@ -24,10 +24,15 @@ const App = () => {
     },
   ];
 
+  const handleAddExpense = (expense) => {
+    console.log('App.js')
+    console.log(expense)
+  }
+
   return (
     <div className="App">
       <header className="App-header">
-        <NewExpense/>
+        <NewExpense onAddExpense={handleAddExpense}/>
         <Expenses items={expenses} />{" "}
         {/** pass expense const in to Expenses as property*/}
       </header>
